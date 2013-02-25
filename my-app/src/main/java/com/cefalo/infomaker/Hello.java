@@ -20,6 +20,12 @@ import javax.ws.rs.core.Response;
 
 @Path("/")
 public class Hello {
+    /**
+     * <p>
+     * This method is called when plain text apply.
+     * </p>
+     * @return body of the page
+     */
     @GET
     @Path("/")
     @Produces(MediaType.TEXT_PLAIN)
@@ -27,6 +33,12 @@ public class Hello {
         return "Hello Rest!!";
     }
 
+    /**
+     * <p>
+     * This method is called when HTML apply.
+     * </p>
+     * @return body of the page
+     */
     @GET
     @Path("/")
     @Produces(MediaType.TEXT_HTML)
